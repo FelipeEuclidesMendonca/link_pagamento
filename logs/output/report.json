@@ -1,0 +1,531 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 4,
+    "passes": 2,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-03-12T20:12:34.011Z",
+    "end": "2021-03-12T20:14:25.771Z",
+    "duration": 111760,
+    "testsRegistered": 4,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "aa94468b-a0f9-477f-b492-39388d9a5428",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d79c68de-a0e5-4af1-91b9-effc671eba82",
+          "title": "Orçamento",
+          "fullFile": "/home/felipeuclides/link-pagamento/scenarios/orcamento_entrega_test.js",
+          "file": "/scenarios/orcamento_entrega_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite in \"Orçamento\"",
+              "fullTitle": "Orçamento \"before all\" hook: codeceptjs.beforeSuite in \"Orçamento\"",
+              "timedOut": false,
+              "duration": 1504,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "2fefc8e6-b497-4851-acd5-a377baa7149d",
+              "parentUUID": "d79c68de-a0e5-4af1-91b9-effc671eba82",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before in \"Orçamento\"",
+              "fullTitle": "Orçamento \"before each\" hook: codeceptjs.before in \"Orçamento\"",
+              "timedOut": false,
+              "duration": 8235,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "2bd59305-3da6-4387-ac6e-1be91eff16e8",
+              "parentUUID": "d79c68de-a0e5-4af1-91b9-effc671eba82",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite in \"Orçamento\"",
+              "fullTitle": "Orçamento \"after all\" hook: codeceptjs.afterSuite in \"Orçamento\"",
+              "timedOut": false,
+              "duration": 4,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "f4b90362-3c3b-4503-affa-349b7a024dbc",
+              "parentUUID": "d79c68de-a0e5-4af1-91b9-effc671eba82",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs in \"Orçamento\"",
+              "fullTitle": "Orçamento \"after each\" hook: finalize codeceptjs in \"Orçamento\"",
+              "timedOut": false,
+              "duration": 219,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "86d63074-73c7-4fc0-85e6-c493d7cd79b1",
+              "parentUUID": "d79c68de-a0e5-4af1-91b9-effc671eba82",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Orçamento - Entrega a Domicilio",
+              "fullTitle": "Orçamento: Orçamento - Entrega a Domicilio",
+              "timedOut": false,
+              "duration": 16411,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "I }) => {\n    I.amOnPage('/');\n    I.seeElement({name: 'name'});\n    I.fillField('name','Felipe Mendonça');\n    I.fillField('phone','11997370379');\n    I.fillField('email','felipe.mendonca@fagrontech.com.br');\n    I.fillField('comments','Gostaria de fazer um orçamento para essa fórmula: Cascara Sagrada 20mg');\n    I.selectOption('#selFormaEntrega','1');\n    I.fillField('code','13100200');\n    I.fillField('address','Avenida Imperatriz Dona Teresa Cristina');     \n    I.fillField('number','15');   \n    I.click('Enviar');\n    I.waitForElement('div h1', 15); // secs",
+              "err": {},
+              "uuid": "529826e5-ea84-4e13-91c3-60306fc348ee",
+              "parentUUID": "d79c68de-a0e5-4af1-91b9-effc671eba82",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "529826e5-ea84-4e13-91c3-60306fc348ee"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 16411,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        },
+        {
+          "uuid": "d1fbf3ab-b2f3-4595-a8b2-645c3e9c005f",
+          "title": "Orçamento",
+          "fullFile": "/home/felipeuclides/link-pagamento/scenarios/orcamento_retirada_test.js",
+          "file": "/scenarios/orcamento_retirada_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite in \"Orçamento\"",
+              "fullTitle": "Orçamento \"before all\" hook: codeceptjs.beforeSuite in \"Orçamento\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "0fb5b372-8d36-4f98-8564-f73c7607f941",
+              "parentUUID": "d1fbf3ab-b2f3-4595-a8b2-645c3e9c005f",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before in \"Orçamento\"",
+              "fullTitle": "Orçamento \"before each\" hook: codeceptjs.before in \"Orçamento\"",
+              "timedOut": false,
+              "duration": 3198,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "2cb34d36-8381-4654-ae78-dbbaa3971eb6",
+              "parentUUID": "d1fbf3ab-b2f3-4595-a8b2-645c3e9c005f",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite in \"Orçamento\"",
+              "fullTitle": "Orçamento \"after all\" hook: codeceptjs.afterSuite in \"Orçamento\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "1a9a9f01-3dcb-4427-aa41-b20c4a26e40b",
+              "parentUUID": "d1fbf3ab-b2f3-4595-a8b2-645c3e9c005f",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs in \"Orçamento\"",
+              "fullTitle": "Orçamento \"after each\" hook: finalize codeceptjs in \"Orçamento\"",
+              "timedOut": false,
+              "duration": 218,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "b7ba3745-6754-4967-94bb-905240b5eea0",
+              "parentUUID": "d1fbf3ab-b2f3-4595-a8b2-645c3e9c005f",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Orçamento - Retirar na loja",
+              "fullTitle": "Orçamento: Orçamento - Retirar na loja",
+              "timedOut": false,
+              "duration": 11368,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "I }) => {\n    I.amOnPage('/');\n    I.seeElement({name: 'name'});\n    I.fillField('name','Felipe Mendonça');\n    I.fillField('phone','11997370379');\n    I.fillField('email','felipe.mendonca@fagrontech.com.br');\n    I.fillField('comments','Gostaria de fazer um orçamento para essa fórmula: Cascara Sagrada 20mg');\n    I.selectOption('#selFormaEntrega','0');\n    I.selectOption('#selEnderecoRetirada','1059');\n    I.click('Enviar');\n    I.waitForElement('div h1', 15); // secs",
+              "err": {},
+              "uuid": "4829789d-b54b-47ef-92a8-b9ad6e83ea1f",
+              "parentUUID": "d1fbf3ab-b2f3-4595-a8b2-645c3e9c005f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4829789d-b54b-47ef-92a8-b9ad6e83ea1f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11368,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        },
+        {
+          "uuid": "85fd0037-df94-40e8-b994-b2116e24a29c",
+          "title": "Pagamento",
+          "fullFile": "/home/felipeuclides/link-pagamento/scenarios/pagamento_cartao_cliente_vinculado_test.js",
+          "file": "/scenarios/pagamento_cartao_cliente_vinculado_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite in \"Pagamento\"",
+              "fullTitle": "Pagamento \"before all\" hook: codeceptjs.beforeSuite in \"Pagamento\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "6ea5f09a-2e6a-44c2-9e8d-efc9f70a1e33",
+              "parentUUID": "85fd0037-df94-40e8-b994-b2116e24a29c",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before in \"Pagamento\"",
+              "fullTitle": "Pagamento \"before each\" hook: codeceptjs.before in \"Pagamento\"",
+              "timedOut": false,
+              "duration": 2548,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "c5929fff-4b31-4da4-a53e-72c91d5d21ec",
+              "parentUUID": "85fd0037-df94-40e8-b994-b2116e24a29c",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite in \"Pagamento\"",
+              "fullTitle": "Pagamento \"after all\" hook: codeceptjs.afterSuite in \"Pagamento\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "339f6236-1893-4662-a512-4fe03ce50d7e",
+              "parentUUID": "85fd0037-df94-40e8-b994-b2116e24a29c",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs in \"Pagamento\"",
+              "fullTitle": "Pagamento \"after each\" hook: finalize codeceptjs in \"Pagamento\"",
+              "timedOut": false,
+              "duration": 198,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "2d167ac5-2c19-4d1c-b761-b20810a8f49a",
+              "parentUUID": "85fd0037-df94-40e8-b994-b2116e24a29c",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Pagamento Cartão - Com cliente vinculado",
+              "fullTitle": "Pagamento: Pagamento Cartão - Com cliente vinculado",
+              "timedOut": false,
+              "duration": 37781,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "I }) => {\n    I.amOnPage('/2B5F97EC-7E39-4B8E-B537-B98C42D54B40');\n    I.selectOption('#selEndereco','89550');\n    I.fillField('cardNumber','5318164352584551');\n    I.fillField('expireDate','01/25');\n    I.fillField('cvc','123');\n    I.fillField('cardOwner','Felipe Mendonca');\n    I.fillField('cpf','01234567890');\n    I.fillField('phone','11997370379');\n    I.fillField('birthDay','01011989');\n    I.fillField('email','felipe.mendonca@fagrontech.com.br');\n    I.click('Finalizar');\n    I.waitForElement('div h1', 15); // secs",
+              "err": {
+                "message": "Error: Selectable field \"#selEndereco\" was not found by text|CSS|XPath",
+                "estack": "Error: Selectable field \"#selEndereco\" was not found by text|CSS|XPath\n    at new ElementNotFound (node_modules/codeceptjs/lib/helper/errors/ElementNotFound.js:14:11)\n    at assertElementExists (node_modules/codeceptjs/lib/helper/WebDriver.js:2770:11)\n    at WebDriver.selectOption (node_modules/codeceptjs/lib/helper/WebDriver.js:1001:5)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "diff": null
+              },
+              "uuid": "7322d9be-13a6-486e-a899-f3d0c40880c0",
+              "parentUUID": "85fd0037-df94-40e8-b994-b2116e24a29c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7322d9be-13a6-486e-a899-f3d0c40880c0"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 37781,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        },
+        {
+          "uuid": "0175bb69-0583-4012-93e6-da3d7f6b91c1",
+          "title": "Pagamento",
+          "fullFile": "/home/felipeuclides/link-pagamento/scenarios/pagamento_cartao_sem_cliente_test.js",
+          "file": "/scenarios/pagamento_cartao_sem_cliente_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite in \"Pagamento\"",
+              "fullTitle": "Pagamento \"before all\" hook: codeceptjs.beforeSuite in \"Pagamento\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "a1ec413b-77fb-40ec-bb38-092f3e6c6be7",
+              "parentUUID": "0175bb69-0583-4012-93e6-da3d7f6b91c1",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before in \"Pagamento\"",
+              "fullTitle": "Pagamento \"before each\" hook: codeceptjs.before in \"Pagamento\"",
+              "timedOut": false,
+              "duration": 3355,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "33d2c32d-1311-4dba-b8a0-9107e2690254",
+              "parentUUID": "0175bb69-0583-4012-93e6-da3d7f6b91c1",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite in \"Pagamento\"",
+              "fullTitle": "Pagamento \"after all\" hook: codeceptjs.afterSuite in \"Pagamento\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "ecab84a9-fcca-49f8-9726-2f8aed22bc3b",
+              "parentUUID": "0175bb69-0583-4012-93e6-da3d7f6b91c1",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs in \"Pagamento\"",
+              "fullTitle": "Pagamento \"after each\" hook: finalize codeceptjs in \"Pagamento\"",
+              "timedOut": false,
+              "duration": 223,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "60b017ee-2523-404b-b619-97b3830cab78",
+              "parentUUID": "0175bb69-0583-4012-93e6-da3d7f6b91c1",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Pagamento Cartão - Sem cliente vinculado",
+              "fullTitle": "Pagamento: Pagamento Cartão - Sem cliente vinculado",
+              "timedOut": false,
+              "duration": 26251,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "I }) => {\n    I.amOnPage('/D514E58E-BEB4-42A9-A633-9AF4B445C65B');\n    I.fillField('name','Felipe Mendonça');\n    I.fillField('cpf','01234567890');\n    I.fillField('phone','11997370379');\n    I.fillField('email','felipe.mendonca@fagrontech.com.br');\n    I.fillField('code','13100200');\n    I.fillField('address','Avenida Imperatriz Dona Teresa Cristina');\n    I.fillField('number','15');\n    I.fillField('cardNumber','5318164352584551');\n    I.fillField('expireDate','01/25');\n    I.fillField('cvc','123');\n    I.fillField('cardOwner','Felipe Mendonca');\n    I.fillField('cpf2','01234567890');\n    I.fillField('phone2','11997370379');\n    I.fillField('birthDay','01011989');\n    I.fillField('email2','felipe.mendonca@fagrontech.com.br');\n    //I.click('Finalizar');\n    I.waitForElement('div h1', 15); // secs",
+              "err": {
+                "message": "Error: Field \"cpf2\" was not found by text|CSS|XPath",
+                "estack": "Error: Field \"cpf2\" was not found by text|CSS|XPath\n    at new ElementNotFound (node_modules/codeceptjs/lib/helper/errors/ElementNotFound.js:14:11)\n    at assertElementExists (node_modules/codeceptjs/lib/helper/WebDriver.js:2770:11)\n    at WebDriver.fillField (node_modules/codeceptjs/lib/helper/WebDriver.js:969:5)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "diff": null
+              },
+              "uuid": "8a8f7413-2dcd-4624-917f-69fd21436983",
+              "parentUUID": "0175bb69-0583-4012-93e6-da3d7f6b91c1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "8a8f7413-2dcd-4624-917f-69fd21436983"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 26251,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.1.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": ".//logs//output",
+        "reportFilename": "report",
+        "reportPageTitle": "tests-with-codeceptjs - Acceptance Tests",
+        "reportTitle": "tests-with-codeceptjs - Acceptance Tests",
+        "autoOpen": true,
+        "enableCode": true,
+        "inlineAssets": true,
+        "overwrite": true,
+        "quiet": false
+      },
+      "version": "5.2.0"
+    }
+  }
+}
